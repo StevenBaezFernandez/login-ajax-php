@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login System</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:100,300,400,500,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64b4e90907.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Inicia sesion o registrate</h1>
+    </header>
+    <h3 class="alert"></h3>
+    
+    <div class="container">
+        <div class="formGroup form-iniciar active">
+            <form action="Backend/login.php" method="post">
+                <img src="img/login img.svg" alt="img" class="img-login">
+                <h2>Login</h2>
+                <div class="inputGroup">
+                    <i class="fas fa-user-alt icon"></i>
+                    <input type="text" name="user" id="user" placeholder="User Name">                  
+                </div>
+                <div class="inputGroup">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" name="pass" id="pass" placeholder="Password">                  
+                </div>
+                <button type="submit" class="r-registrar" id="r-registrar">Registrarse</button>
+                <button type="submit" class="iniciar" id="iniciar">Iniciar</button>              
+
+            </form>           
+        </div>
+
+
+        <div class="formGroup form-registrar">
+            <form class="form">
+                <img src="img/registrar img.svg" alt="img" class="img-login">
+                <h2>Registrarse</h2>
+                <div class="inputGroup">
+                    <i class="fas fa-user-alt icon"></i>
+                    <input type="text" name="user" id="r-user" placeholder="User Name">                  
+                </div>
+                <div class="inputGroup">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" name="pass" id="r-pass" placeholder="Password">                  
+                </div>
+                <div class="inputGroup">
+                    <i class="fas fa-key icon"></i>
+                    <input type="password" name="pass2" id="r-pass2" placeholder="Confirmar Password">                  
+                </div>
+                <button type="submit" class="r-iniciar" id="r-iniciar">Iniciar Sesión</button>
+                <button type="submit" class="registrar" id="registrar">Registrarse</button>   
+            </form>
+        </div>
+
+        
+    </div>
+
+    <div class="disign-box">
+
+    </div>
+
+    <script src="javascript/main.js"></script>
+</body>
+</html>

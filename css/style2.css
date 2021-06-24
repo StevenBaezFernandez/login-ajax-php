@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.titulo{
+    text-align: center;
+    margin-top: 200px;
+}
+.enlace{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1.5px solid #444;
+    color: #111111;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+.enlace:hover{
+    background: #444;
+    color: #ffffff;
+}

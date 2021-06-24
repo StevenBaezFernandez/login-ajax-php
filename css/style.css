@@ -1,0 +1,161 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #fafcff;
+}
+.cabecera{
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.cabecera h1{
+    font-family: 'Open Sans', sans-serif;
+}
+.cabecera p{
+    font-family: 'Roboto', sans-serif;
+    color: #342da7;
+}
+.container{
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+}
+.formGroup{
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.20);
+    border-radius: 10px;
+    padding: 20px 60px;
+    animation: entrada .8s ease .5s forwards;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100px);
+    display: none;
+
+}
+.formGroup.active{
+    display: block;
+}
+@keyframes entrada{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.formGroup form{
+    width: 100%;
+    text-align: center;
+}
+.formGroup form h2{
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.formGroup form input[type="text"],
+.formGroup form input[type="password"]{
+    /* margin-bottom: 15px; */
+    padding: 15px 15px 15px 40px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #ccc ;
+    outline: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+.formGroup form input[type="text"]::placeholder,
+.formGroup form input[type="password"]::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+.inputGroup{
+    margin-bottom: 15px;
+    position: relative;
+}
+.inputGroup .icon{
+    position: absolute;
+    left: 12px;
+    font-size: 18px;
+    line-height: 18px;
+    top: calc(50% - 9px);
+    color: #A5A9B5;
+}
+.formGroup form button[type="submit"]{
+    padding: 12px;
+    border: none;
+    font-family: 'Roboto';
+    outline: none;
+    width: 100px;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.80);
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 120px;
+
+}
+.iniciar{
+    background: #4a40e4;
+    color: #ffffff;
+    margin-left: 30px;
+}
+.iniciar:hover{
+    background: #5249d8;
+}
+.r-registrar{
+    margin-right: 30px;
+}
+.formGroup form:nth-child(2) button{
+    width: 120px;
+    margin-top: 10px;
+}
+.r-iniciar{
+    margin-right: 30px;
+}
+.registrar{
+    margin-left: 30px;
+    background: #4a40e4;
+    color: #ffffff;
+}
+.registrar:hover{
+    background: #5249d8;
+}
+.disign-box{
+    background: #4a40e4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    clip-path: polygon(100% 74%, 0% 100%, 100% 100%);
+    opacity: .8;
+    z-index: -1;
+}
+.img-login{
+    width: 150px;
+    height: 100px;
+    
+}
+.alert{
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: #342da7;
+    display: none;
+}
+.alert.active{
+    display: block;
+}
+
